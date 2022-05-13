@@ -27,7 +27,7 @@
 
                 <div id="liveAlertPlaceholder"></div>
                 <button type="button" class="btn btn-primary w-100 mb-2" id="liveAlertBtn">Login</button>
-                <button type="reset" class="btn btn-secondary w-100">Resetar</button>
+                <button type="reset" class="btn btn-secondary w-100" id="btnReset">Resetar</button>
             </form>
         </div>
     </section>
@@ -52,6 +52,14 @@
                 alert('Legal, você logou!', 'success')
             })
         }
+    </script>
+    <script>
+        let btnResetar = document.getElementById('btnReset');
+        let inputs = document.querySelectorAll('input');
+
+        btnResetar.addEventListener('click', () => {
+            inputs.forEach(input => input.value = '');
+        });
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
