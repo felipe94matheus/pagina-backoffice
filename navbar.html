@@ -36,10 +36,11 @@
         <div class="container-fluid">
             <a class="navbar-brand">Produtos Cadastrados</a>
             <form class="d-flex" role="search">
-                <button class="btn btn-primary" type="button" data-bs-toggle="modal"
+                <button class="btn btn-success" type="button" data-bs-toggle="modal"
                     data-bs-target="#exampleModal">Cadastrar</button>
             </form>
         </div>
+        <div id="deleteAlertPlaceholder"></div>
     </nav>
     <!-- Modal -->
     <!--Aqui é todo o contexto do modal (backdrop + dialog)-->
@@ -56,6 +57,10 @@
                 <div class="modal-body">
                     <table class="table">
                         <thead>
+                            <tr>
+                                <div id="liveAlertPlaceholder">
+                                </div>
+                            </tr>
                         </thead>
                         <tbody>
                             <tr>
@@ -81,10 +86,9 @@
                 </div>
                 <!--Aqui é o rodape do modal-->
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <div id="liveAlertPlaceholder">
-                    </div>
-                    <button type="button" class="btn btn-primary" id="liveAlertBtn">Cadastrar</button>
+
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-success" id="liveAlertBtn">Cadastrar</button>
 
                 </div>
             </div>
@@ -108,7 +112,7 @@
                     <td>2</td>
                     <td>R$ 30,00</td>
                     <td>
-                        <button type="button" class="btn btn-primary">
+                        <button type="button" class="btn btn-danger delete1">
                             Deletar
                         </button>
                     </td>
@@ -119,9 +123,7 @@
                     <td>36</td>
                     <td>R$ 0,10</td>
                     <td>
-                        <div id="liveAlertPlaceholder">
-                        </div>
-                        <button type="button" class="btn btn-primary" id="liveAlertBtn">
+                        <button type="button" class="btn btn-danger delete2">
                             Deletar
                         </button>
                     </td>
@@ -132,7 +134,7 @@
                     <td>9</td>
                     <td>R$ 150,00</td>
                     <td>
-                        <button type="button" class="btn btn-primary">
+                        <button type="button" class="btn btn-danger delete3">
                             Deletar
                         </button>
                     </td>
