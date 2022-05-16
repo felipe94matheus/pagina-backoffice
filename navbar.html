@@ -21,7 +21,7 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                         <a class="nav-link" href="#">Gerenciamento de estoque</a>
@@ -32,7 +32,7 @@
             </div>
         </nav>
     </header>
-    <nav class="navbar bg-light mt-3">
+    <nav class="navbar bg-light mt-5">
         <div class="container-fluid">
             <a class="navbar-brand">Produtos Cadastrados</a>
             <form class="d-flex" role="search">
@@ -40,8 +40,8 @@
                     data-bs-target="#exampleModal">Cadastrar</button>
             </form>
         </div>
-        <div id="deleteAlertPlaceholder"></div>
     </nav>
+    <div id="deleteAlertPlaceholder"></div>
     <!-- Modal -->
     <!--Aqui é todo o contexto do modal (backdrop + dialog)-->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -111,7 +111,7 @@
                     <td>Manilha</td>
                     <td>2</td>
                     <td>R$ 30,00</td>
-                    <td>
+                    <td class="d-flex justify-content-end">
                         <button type="button" class="btn btn-danger delete1">
                             Deletar
                         </button>
@@ -122,7 +122,7 @@
                     <td>Parafuso</td>
                     <td>36</td>
                     <td>R$ 0,10</td>
-                    <td>
+                    <td class="d-flex justify-content-end">
                         <button type="button" class="btn btn-danger delete2">
                             Deletar
                         </button>
@@ -133,7 +133,7 @@
                     <td>Biela</td>
                     <td>9</td>
                     <td>R$ 150,00</td>
-                    <td>
+                    <td class="d-flex justify-content-end">
                         <button type="button" class="btn btn-danger delete3">
                             Deletar
                         </button>
